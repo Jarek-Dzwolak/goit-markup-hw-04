@@ -245,7 +245,7 @@ ul {
     font-size: 16px;
 }
 .employess > li > p {
-    padding-bottom: 30px;
+    padding-bottom: 16px;
     font-size: 16px;
     color: var(--text-color);
     display: flex;
@@ -256,8 +256,11 @@ ul {
         0px 1px 3px 0px #0000001f;
 }
 .social-svg {
-    width: 44px;
-    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding-bottom: 16px;
 }
 .our-customers {
     display: flex;
