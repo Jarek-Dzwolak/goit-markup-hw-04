@@ -102,8 +102,12 @@ ul {
     align-items: center;
     gap: 10px;
 }
+.contact-item > svg:hover {
+    fill: var(--style-color);
+}
 .contact-item:hover {
     color: var(--style-color);
+    fill: var(--style-color);
 }
 .header-wrapper nav {
     display: flex;
@@ -251,11 +255,24 @@ ul {
     box-shadow: 0px 2px 1px 0px #00000033, 0px 1px 1px 0px #00000024,
         0px 1px 3px 0px #0000001f;
 }
+.social-svg {
+    width: 44px;
+    height: 44px;
+}
 .our-customers {
     display: flex;
     justify-content: center;
     gap: 30px;
 }
+.our-customers-back {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    border: 1px solid #afb1b8;
+    border-radius: 5px;
+}
+
 /*-----MAIN-PORTFOLIO */
 .buttons {
     display: flex;
