@@ -71,6 +71,7 @@ ul {
     display: flex;
     align-items: center;
     gap: 10px;
+    fill: currentColor;
 }
 .link-kontakt:hover,
 .link-kontakt:focus,
@@ -148,10 +149,18 @@ ul {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(../images/back-ground-1.jpg);
+    max-width: 1600px;
+    background-image: linear-gradient(
+            to right,
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/back-ground-1.jpg);
+    background-size: auto;
     background-repeat: no-repeat;
-    background-position: 50% 50%;
-    background-size: cover;
+    background-position: center center;
+    fill-opacity: 0.6;
+    margin: 0 auto;
 }
 .first-section {
     color: var(--main-bright-color);
@@ -165,6 +174,7 @@ ul {
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+    line-height: 1.3636;
 }
 .first-section > button {
     font-family: 'Roboto', sans-serif;
@@ -179,6 +189,7 @@ ul {
     cursor: pointer;
     font-weight: 700;
     letter-spacing: 0.06em;
+    box-shadow: 0px 4px 4px 0px #00000026;
 }
 .class-size {
     margin-top: -94px;
@@ -369,13 +380,16 @@ ul {
 }
 
 /*-----FOOTER-----*/
+.footer-section > .container {
+    display: flex;
+}
 .footer-section {
     background-color: var(--second-background-color);
     padding: 60px 0;
 }
 .footer-look {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 }
 .footer-section address {
     font-style: normal;
@@ -408,9 +422,8 @@ ul {
     color: var(--style-color);
 }
 .footer-social {
-    width: 260px;
-    height: 80px;
     margin-left: 70px;
+    margin-top: 12px;
 }
 .footer-social > div {
     display: flex;
