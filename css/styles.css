@@ -448,6 +448,7 @@ ul {
     border-radius: 50%;
     background: rgba(255, 255, 255, 0.1);
 }
-.footer-social-svg:hover {
+.footer-social-svg:hover,
+.footer-social-svg:focus {
     background: var(--style-color);
 }
